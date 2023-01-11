@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WedInvitation</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-details">
+        <form action="#" method="">
+          <div class="login-header">
+            <p><b>Login</b></p>
+          </div>
+          <hr />
+          <div class="login-data">
+            <label for="userID">userId</label>
+            <br />
+            <input type="text" id="userID" name="userId" value="" required />
+            <br />
+            <br />
+            <label for="loginPass" name="">password</label>
+            <br />
+            <input
+              type="password"
+              id="loginPass"
+              name="password"
+              value=""
+              required
+            />
+            <br />
+            <br />
+            <div class="login-select">
+              <input
+                type="radio"
+                id="admin"
+                name="user-category"
+                value="admin"
+                required
+              />
+              <label for="admin">admin</label>
+              <input
+                type="radio"
+                id="user"
+                name="user-category"
+                value="user"
+                required
+              />
+              <label for="user">user</label>
+            </div>
+            <br />
+
+            <input id="submit-button" type="submit" />
+          </div>
+          <hr />
+          <div class="create-account">
+            <p>Register to create new account</p>
+            <a href="./signUp" target="_self">SignUp</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
