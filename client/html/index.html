@@ -10,29 +10,24 @@
   <body>
     <div class="login-page">
       <div class="login-details">
-        <form action="#" method="">
+        <form id="loginSubmit" name="logform" method="post">
           <div class="login-header">
             <p><b>Login</b></p>
           </div>
           <hr />
           <div class="login-data">
-            <label for="userID">userId</label>
-            <br />
-            <input type="text" id="userID" name="userId" value="" required />
-            <br />
-            <br />
-            <label for="loginPass" name="">password</label>
-            <br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="userName" value="" required />
+            <label for="pass" name="">Password:</label>
             <input
               type="password"
-              id="loginPass"
+              id="pass"
               name="password"
               value=""
               required
             />
-            <br />
-            <br />
-            <div class="login-select">
+            <a href="./resetPass.html">Forgot password?</a>
+            <div class="user-type">
               <input
                 type="radio"
                 id="admin"
@@ -40,7 +35,7 @@
                 value="admin"
                 required
               />
-              <label for="admin">admin</label>
+              <label for="admin">Admin</label>
               <input
                 type="radio"
                 id="user"
@@ -48,19 +43,19 @@
                 value="user"
                 required
               />
-              <label for="user">user</label>
+              <label for="user">User</label>
             </div>
-            <br />
 
-            <input id="submit-button" type="submit" />
-          </div>
-          <hr />
-          <div class="create-account">
-            <p>Register to create new account</p>
-            <a href="./signUp" target="_self">SignUp</a>
+            <input type="submit" id="submit-button" />
           </div>
         </form>
+        <hr />
+        <div class="create-account">
+          <p>Register to create new account</p>
+          <a href="./signUp.html" target="_self">SignUp</a>
+        </div>
       </div>
     </div>
+    <script src="../js/index.js" type="text/javascript"></script>
   </body>
 </html>
