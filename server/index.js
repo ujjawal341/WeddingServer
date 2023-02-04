@@ -1,8 +1,7 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import mongoose, { mongo } from 'mongoose';
-import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 import cors from 'cors';
 import router from './routes/rthandle.js';
 
@@ -10,13 +9,13 @@ dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const PORT = process.env.PORT || 3000;
-
+const PORT = 3000;
+const DBURL = "mongodb+srv://ujj-chintu:PtxwarUr8pbkN0Yv@wedding.nxpeo0j.mongodb.net/Wedding?retryWrites=true&w=majority"
 const connectDB = () => {
   mongoose.set({
     strictQuery: false,
   });
-  return mongoose.connect(process.env.DBURL);
+  return mongoose.connect(DBURL);
 };
 
 const app = express();
